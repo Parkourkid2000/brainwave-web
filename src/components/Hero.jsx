@@ -8,7 +8,7 @@ import { heroIcons } from "../constants";
 import { ScrollParallax } from "react-just-parallax";
 import Generating from "./Generating";
 import Notification from "./Notification";
-import CompanyLogos from "./CompanyLogos";
+// import CompanyLogos from "./CompanyLogos"; DISABLED
 
 const Hero = () => {
   const parallaxRef = useRef(null);
@@ -44,7 +44,7 @@ const Hero = () => {
             Unleash the power of AI within Brainwave. Upgrade your productivity
             with Brainwave, the open AI chat app.
           </p>
-          <Button href="/pricing" white>
+          <Button href="#pricing" white>
             Get Started
           </Button>
         </div>
@@ -103,7 +103,8 @@ const Hero = () => {
           </div>
           <BackgroundCircles />
         </div>
-        <CompanyLogos className='hidden relative z-10 mt-20 lg:block ' />
+        {/* DISABLED: PENDING MISSING LOGOS TO BE ADDED */}
+        {/* <CompanyLogos className='hidden relative z-10 mt-20 lg:block ' /> */}
       </div>
       <BottomLine />
     </Section>
